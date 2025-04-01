@@ -82,12 +82,8 @@ export default function Login() {
           Sign Up
         </a>
       </p>
-<<<<<<< HEAD
-      <ToastContainer />
-=======
       <ToastContainer theme="dark" />
 
->>>>>>> dbab92d (Initial commit)
     </div>
   );
 }
