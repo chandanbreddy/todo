@@ -49,7 +49,11 @@ export default function Home() {
       });
     } catch (error) {
       const errorMessage = error.response.data.message;
+<<<<<<< HEAD
       toast.error(errorMessage);
+=======
+      toast(errorMessage);
+>>>>>>> dbab92d (Initial commit)
     }
   };
 
@@ -71,7 +75,11 @@ export default function Home() {
       });
     } catch (error) {
       const errorMessage = error.response.data.message;
+<<<<<<< HEAD
       toast.error(errorMessage);
+=======
+      toast(errorMessage);
+>>>>>>> dbab92d (Initial commit)
     }
   };
 
@@ -93,7 +101,12 @@ export default function Home() {
       setTasks(updatedTasks);
     } catch (error) {
       console.error("Error deleting task:", error);
+<<<<<<< HEAD
       toast.error("Failed to delete task");
+=======
+      toast("Failed to delete task"),{
+      };
+>>>>>>> dbab92d (Initial commit)
     }
   };
 
@@ -161,7 +174,11 @@ export default function Home() {
           </div>
         ))}
       </div>
+<<<<<<< HEAD
       <ToastContainer />
+=======
+      <ToastContainer theme="dark"/>
+>>>>>>> dbab92d (Initial commit)
     </div>
   );
 }

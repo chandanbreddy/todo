@@ -85,7 +85,12 @@ export default function Register() {
           Login
         </a>
       </p>
+<<<<<<< HEAD
       <ToastContainer />
+=======
+      <ToastContainer theme="dark" />
+
+>>>>>>> dbab92d (Initial commit)
     </div>
   ); 
 }

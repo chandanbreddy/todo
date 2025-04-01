@@ -19,6 +19,12 @@
   gap: 40px;
   color: aliceblue;
 }
+<<<<<<< HEAD
+=======
+.Toastify__toast {
+  color: black !important;
+}
+>>>>>>> dbab92d (Initial commit)
 
 
 
