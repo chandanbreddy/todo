@@ -26,7 +26,7 @@ export default function Register() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/user/register",
+        "https://todo-jz4j.onrender.com/user/register",
         data
       );
       // console.log(response);

@@ -26,7 +26,7 @@ export default function Home() {
       return;
     }
     try {
-      const response = await axios.get("http://localhost:5000/api/todo", {
+      const response = await axios.get("https://todo-jz4j.onrender.com/api/todo", {
         headers: authHeader,
       });
       setTasks(response.data);
@@ -38,7 +38,7 @@ export default function Home() {
   const handleAddTask = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/todo",
+        "https://todo-jz4j.onrender.com/api/todo",
         newTask,
         { headers: authHeader }
       );
@@ -59,7 +59,7 @@ export default function Home() {
   const handleEditTask = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/todo/${editingTaskId}`,
+        `https://todo-jz4j.onrender.com/api/todo/${editingTaskId}`,
         newTask,
         { headers: authHeader }
       );
@@ -89,7 +89,7 @@ export default function Home() {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/todo/${taskId}`, {
+      await axios.delete(`https://todo-jz4j.onrender.com/api/todo/${taskId}`, {
         headers: authHeader,
       });
       const updatedTasks = tasks.filter((task) => task._id !== taskId);
